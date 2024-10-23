@@ -1,193 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Job Listings</title>
+  <link rel="stylesheet" href="../index.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+  <script src="../index.js"></script>
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+  <div class="top-bar">
+    <img id='bg-img' src="../images/bg-header-desktop.svg">
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <div class="filter-bar">
+        <div class="selected-filters">
+        </div>
+      
+        <button id="clear-filters-button">Clear</button>
+    </div>
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+
+  <div class="items-block">
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+
+      <div class="company-logo-box">
+        <img src="../images/photosnap.svg">
+      </div>
+
+      <div class="item-left-content">
+
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Photosnap</h3>
+          </div>
+          <div class="label-new-box">
+            <p>New!</p>
+          </div>
+          <div class="label-featured-box">
+            <p>Featured</p>
+          </div>
+        </div>
+
+        <div class="heading-block-box">
+          <h2>Senior Frontend Developer</h2>
+        </div>
+
+        <div class="item-bottom-block-box">
+          <p>1d ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>USA only</p>
+        </div>
+
+        <hr>
+
+
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table">Frontend</div>
+        <div class="attr-table"> Senior </div>
+        <div class="attr-table">HTML</div>
+        <div class="attr-table">CSS</div>
+        <div class="attr-table">JavaScript</div>
+      </div>
+
+    </div>
+
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/manage.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Manage</h3>
+          </div>
+          <div class="label-new-box">
+            <p>New!</p>
+          </div>
+          <div class="label-featured-box">
+            <p>Featured</p>
+          </div>
+        </div>
+        <div class="heading-block-box">
+          <h2>Fullstack Developer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>1d ago</p>
+          <p>&#x2022;</p>
+          <p>Part Time</p>
+          <p>&#x2022;</p>
+          <p>Remote</p>
+        </div>
+
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Fullstack</div>
+        <div class="attr-table level-table">Midweight</div>
+        <div class="attr-table language-table">Python</div>
+        <div class="attr-table language-table">React</div>
+      </div>
+
+    </div>
+
+
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      
+      <div class="company-logo-box">
+        <img src="../images/account.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Account</h3>
+          </div>
+          <div class="label-new-box">
+            <p>New!</p>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Junior Frontend Developer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>2d ago</p>
+          <p>&#x2022;</p>
+          <p>Part Time</p>
+          <p>&#x2022;</p>
+          <p>USA only</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Frontend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table tools-table">React</div>
+        <div class="attr-table tools-table">Sass</div>
+        <div class="attr-table language-table">JavaScript</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/myhome.svg">
+      </div>
+
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>MyHome</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="heading-block-box">
+          <h2>Junior Frontend Developer</h2>
+        </div>
+
+        <div class="item-bottom-block-box">
+          <p>5d ago</p>
+          <p>&#x2022;</p>
+          <p>Contract</p>
+          <p>&#x2022;</p>
+          <p>USA only</p>
+        </div>
+
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Frontend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table language-table">CSS</div>
+        <div class="attr-table language-table">JavaScript</div>
+      </div>
+
+    </div>
+
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/loop-studios.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Loop Studios</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Software Engineer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>1w ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>Worldwide</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Fullstack</div>
+        <div class="attr-table level-table">Midweight</div>
+        <div class="attr-table language-table">JavaScript</div>
+        <div class="attr-table tools-table">Sass</div>
+        <div class="attr-table language-table">Ruby</div>
+
+      </div>
+
+    </div>
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/faceit.svg">
+      </div>
+
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>FaceIt</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+
+        <div class="heading-block-box">
+          <h2>Junior Backend Developer</h2>
+        </div>
+
+        <div class="item-bottom-block-box">
+          <p>2w ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>UK only</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Backend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table language-table">Ruby</div>
+        <div class="attr-table tool-table">RoR</div>
+      </div>
+
+    </div>
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/shortly.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Shortly</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Junior Developer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>2w ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>Worldwide</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Frontend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table language-table">HTML</div>
+        <div class="attr-table tool-table">Sass</div>
+        <div class="attr-table language-table">JavaScript</div>
+      </div>
+
+    </div>
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/insure.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Insure</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Junior Frontend Developer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>2w ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>USA only</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Frontend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table tool-table">Vue</div>
+        <div class="attr-table language-table">JavaScript</div>
+        <div class="attr-table tool-table">Sass</div>
+      </div>
+    </div>
+
+    <div class="item-container">
+
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/eyecam-co.svg">
+      </div>
+
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>Eyecam Co.</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Full Stack Engineer</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>3w ago</p>
+          <p>&#x2022;</p>
+          <p>Full Time</p>
+          <p>&#x2022;</p>
+          <p>Worldwide</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Fullstack</div>
+        <div class="attr-table level-table">Midweight</div>
+        <div class="attr-table language-table">JavaScript</div>
+        <div class="attr-table tool-table">Django</div>
+        <div class="attr-table language-table">Python</div>
+
+      </div>
+
+    </div>
+
+
+    <div class="item-container">
+      <div class="left-vertical-line">
+        <p></p>
+      </div>
+      <div class="company-logo-box">
+        <img src="../images/the-air-filter-company.svg">
+      </div>
+      <div class="item-left-content">
+        <div class="item-top-block-box">
+          <div class="company-name">
+            <h3>The Air Filter Company</h3>
+          </div>
+
+          <div class="label-featured-box">
+            <p></p>
+          </div>
+
+        </div>
+        <div class="heading-block-box">
+          <h2>Front-end Dev</h2>
+        </div>
+        <div class="item-bottom-block-box">
+          <p>1mo ago</p>
+          <p>&#x2022;</p>
+          <p>Part Time</p>
+          <p>&#x2022;</p>
+          <p>Worldwide</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="item-right-content">
+        <div class="attr-table role-table">Frontend</div>
+        <div class="attr-table level-table">Junior</div>
+        <div class="attr-table tool-table">React</div>
+        <div class="attr-table tool-table">Sass</div>
+        <div class="attr-table language-table">JavaScript</div>
+
+      </div>
+    </div>
+
 </body>
+
 </html>
