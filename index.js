@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
     selectedFiltersBox.innerHTML = '';
     filterBar.style.display = 'none';
     console.log('Updated Filters List:', selectedFilters);
+    FilterCards();
   });
 
   function FilterCards() {
