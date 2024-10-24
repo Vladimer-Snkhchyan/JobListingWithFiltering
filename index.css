@@ -200,7 +200,6 @@ body {
 
 .company-name {
     color: var(--Primary-Desaturated-Dark-Cyan);
-    margin-right: 15px;
     align-content: center;
 }
 
@@ -281,7 +280,6 @@ body {
     margin: 0;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
