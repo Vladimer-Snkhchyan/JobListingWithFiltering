@@ -13,20 +13,16 @@
 .filter-bar {
     background-color: white;
     position: absolute;
-    bottom: -25px;
+    top: 125px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 74%;
+    width: 77%;
     border: 1px solid var(--Light-Grayish-Cyan-Background);
     border-radius: 10px;
     padding-left: 10px;
     display: none;
     box-shadow: 3px 5px 25px hsl(180, 29%, 70%);
-    transition: 0.15s;
-    max-width: 75%;
-
-
 }
 
 .selected-filters {
@@ -34,8 +30,8 @@
     display: flex;
     justify-content: left;
     gap: 15px;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
     overflow-x:scroll;
     overflow-y: hidden;
 }
@@ -131,7 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 4rem;
 }
 
 /* Item container */
@@ -139,7 +135,7 @@ body {
     flex: 1;
     position: relative;
     background-color: white;
-    width: 74vw;
+    width: 74%;
     border: 0px solid white;
     border-radius: 5px;
     box-shadow: 1px 5px 20px hsl(180, 29%, 70%);
@@ -148,9 +144,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-left: 23px;
-    padding-right: 23px;
-    margin-bottom: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
 }
 
@@ -159,7 +154,7 @@ body {
     height: calc(100% - 1px);
     width: 3px;
     border: 1px solid var(--Primary-Desaturated-Dark-Cyan);
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     position: absolute;
     top: 0;
     left: 0;
@@ -168,10 +163,9 @@ body {
 .company-logo-box {
     position: absolute;
     bottom: 90%;
-    left: 23;
-    width: calc(50px + 1vw);
-    height: calc(50px + 1vh);
-    z-index: 1;
+    left: 23px;
+    width: 70px;
+    height: 70px;
 }
 
 .company-logo-box img {
@@ -182,7 +176,6 @@ body {
 }
 
 .company-logo-box img:hover {
-    z-index: 3;
     opacity: 0.90;
     cursor: pointer;
     transform: scale(1.1);
@@ -226,7 +219,6 @@ body {
 
 .label-new-box {
     margin: 0;
-    margin-right: 0.5vw;
     background-color: var(--Primary-Desaturated-Dark-Cyan);
     border: 1px solid var(--Primary-Desaturated-Dark-Cyan);
     --height: 19px;
@@ -316,11 +308,9 @@ hr {
     justify-content: left;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 18px;
-    row-gap: 15px;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    width: 90%
+    gap: 1.5rem;
+    margin: 1rem;
+    width: 90%;
 }
 
 .attr-table {
@@ -343,107 +333,46 @@ hr {
 /* #### Desktop and Tablet Version #### */
 @media (min-width: 720px) {
 
-    body {
-        background-color: var(--Light-Grayish-Cyan-Background);
-        margin: 0;
-        padding-bottom: 100px;
-    }
-    /* ### Top Bar block ### */
-    .top-bar {
-        background-color: var(--Primary-Desaturated-Dark-Cyan);
-        width: 100%;
-        height: 156px;
-        margin-bottom: 80px;
-        position: relative;
-    }
-
-    #bg-img {
-        position: absolute;
-        right: 0;
-        height: 100%;
-    }
-
-
-    /* ### Top Bar block ### */
-    .top-bar {
-        background-color: var(--Primary-Desaturated-Dark-Cyan);
-        width: 100%;
-        height: 156px;
-        margin-bottom: 80px;
-        position: relative;
-    }
-
     #bg-img {
         width: 100%;
         height: 100%;
-        ;
         max-width: 100%;
         max-width: 100%;
     }
-
 
     /* ### Middle block or main content ### */
     .items-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4vh;
+        gap: 3.2rem;
     }
 
     /* Item container */
     .item-container {
-        flex: 1;
-        position: relative;
-        background-color: white;
-        width: 74vw;
-        border: 0px solid white;
-        border-radius: 5px;
-
-        box-shadow: 1px 5px 20px hsl(180, 29%, 70%);
-        transition: 0.15s;
-
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 
     .company-logo-box {
-        margin-right: 1.2vw !important; 
-        margin-top: 4vh !important;
-        margin-bottom: 4vh !important;
-        margin-left: 30px !important;
-        align-content: center;
+        margin: 1.5rem;
         width: 100px;
         height: 100px;
         position: static;
     }
 
     .company-logo-box img {
-        width: 100% !important;
-        height: 100% !important;
+        width: 100%;
+        height: 100% 
 
-    }
-    .company-logo-box img:hover {
-        opacity: 0.90;
-        cursor: pointer;
-        transform: scale(1.1);
     }
 
     .item-left-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-around;
-        padding-bottom: 4.5vh;
-        gap: 8px;
+        margin: 0;
+        align-items: space-around;
     }
 
-
-
-
     .item-top-block-box h3 {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     .heading-block-box {
@@ -452,17 +381,7 @@ hr {
     }
 
     .heading-block-box h2 {
-        font-size: 22px !important;
-    }
-
-
-    .item-bottom-block-box {
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        margin-top: 8px;
+        font-size: 22px;
     }
 
     hr {
@@ -470,19 +389,7 @@ hr {
     }
 
     .item-right-content {
-        flex: 1;
-        align-items: center;
         justify-content: right;
-        display: flex;
-        padding-left: 10px;
-        padding-right: 2.5vw;
-        padding-top: 4vh;
-        padding-bottom: 4vh;
-        flex-wrap: wrap;
-        column-gap: 15px;
-        row-gap: 10px;
-
-
     }
 }
 
